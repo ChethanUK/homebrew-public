@@ -11,6 +11,23 @@ You can also install via URL:
     brew install https://raw.githubusercontent.com/ChethanUK/homebrew-public/main/<formula>.rb
     brew install https://raw.githubusercontent.com/ChethanUK/homebrew-public/main/graphviz.rb
 
+To untap:
+
+```bash
+brew untap ChethanUK/public
+```
+
+To tap:
+
+```bash
+brew tap ChethanUK/public
+```
+
+To install: 
+
+```bash
+brew install chethanuk/public/graphviz
+```
 
 ## Docs
 `brew help`, `man brew`, or the Homebrew [README](https://github.com/Homebrew/brew/blob/master/docs/README.md).
