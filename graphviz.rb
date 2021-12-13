@@ -2,17 +2,18 @@ class Graphviz < Formula
   desc "Graph visualization software from AT&T and Bell Labs"
   homepage "https://www.graphviz.org/"
   url "https://gitlab.com/graphviz/graphviz.git",
-      tag:      "2.47.1",
-      revision: "4d28b2995711197764924fe822e6d19d19d1a49e"
+      tag:      "2.50.0",
+      revision: "ca43e4c6a217650447e2928c2e9cb493c73ebd7d"
   license "EPL-1.0"
   version_scheme 1
   head "https://gitlab.com/graphviz/graphviz.git"
 
   bottle do
-    sha256 arm64_big_sur: "d9830966d41ef07d40f0a269597051dc3bd317f1f834f8eebf220d7fee6e06cb"
-    sha256 big_sur:       "41c4fe36cca429a201173d6f282bbc3e12ac9ae397736da75f2beb5c4c0d2e33"
-    sha256 catalina:      "4010170a67db373c8aaf6d2d4cc4767ed74963fbedf33641e672414f49af6a9b"
-    sha256 mojave:        "a6dfb7964c7776134a100467120aa190fe45415b53a704b2a372d0b82e1d2bc6"
+    sha256 arm64_big_sur: "437ed6697432b7b5c9b6e4d4e90b5c77ccc35a2e22546463a328425bf7fe9600"
+    sha256 monterey:      "3b342e85783dbdc6265f671add55d1293552f673efc293f58fc19b0a4bace1c5"
+    sha256 big_sur:       "528774acbc0e94a60c616773771d6ae73830e66f8e6adf7bf888c67947f04902"
+    sha256 catalina:      "633d24b7cd2b20b5483f441fd8d7b90d0aaad4574add6ff7d740876a2236fdee"
+    sha256 x86_64_linux:  "ad4ba705aa70bfe3dbd607e929e0fb9af02c81104ccd482869acedce8bb0a96a"
   end
 
   depends_on "autoconf" => :build
@@ -56,8 +57,6 @@ class Graphviz < Formula
     system "./configure", *args
     system "make"
     system "make", "install"
-
-    (bin/"gvmap.sh").unlink
   end
 
   test do
