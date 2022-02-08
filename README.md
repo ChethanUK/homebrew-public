@@ -8,19 +8,19 @@ If the formula conflicts with one from another tap, you can `brew install chetha
 
 You can also install via URL:
 
-    brew install https://raw.githubusercontent.com/ChethanUK/homebrew-public/main/<formula>.rb
-    brew install https://raw.githubusercontent.com/ChethanUK/homebrew-public/main/graphviz.rb
+    brew install https://raw.githubusercontent.com/chethanuk/homebrew-public/main/<formula>.rb
+    brew install https://raw.githubusercontent.com/chethanuk/homebrew-public/main/graphviz.rb
 
 To untap:
 
 ```bash
-brew untap ChethanUK/public
+brew untap chethanuk/public
 ```
 
 To tap:
 
 ```bash
-brew tap ChethanUK/public
+brew tap chethanuk/public
 ```
 
 To install: 
